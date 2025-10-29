@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting…</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      background: #0f0f0f;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+  </style>
+  <script>
+    (function () {
+      // Update repoName if you rename the repository
+      var repoName = 'Srimathi-personal-portfolio';
+      var search = window.location.search || '';
+      var hash = window.location.hash || '';
+      var redirectUrl = window.location.origin + '/' + repoName + '/index.html' + search + hash;
+      window.location.replace(redirectUrl);
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting you back to the portfolio…</p>
+</body>
+</html>
